@@ -12,6 +12,14 @@ export default function Skills() {
     "Software Development",
     "Hardware Configuration",
     "Research & Development",
+    "Algoprithms & Data Structures",
+    "Data Visualization",
+    "Natural Language Processing",
+    "Pprompt engineering",
+    "Cybernetics",
+    "Langchain",
+    "Blockchain",
+    "Quantum Computing",
   ]
 
   return (
