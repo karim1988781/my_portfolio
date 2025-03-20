@@ -7,17 +7,17 @@ export default function TestPage() {
 
       <div className="mb-8">
         <h2 className="text-xl mb-2">Test 1: Regular HTML img tag</h2>
-        <img src="/photo.jpg" alt="Test image 1" width="200" height="200" style={{ border: "2px solid red" }} />
+        <Image src="/photo.jpg" alt="Test image 1" width="200" height="200" style={{ border: "2px solid red" }} />
       </div>
 
       <div className="mb-8">
         <h2 className="text-xl mb-2">Test 2: Different path</h2>
-        <img src="./photo.jpg" alt="Test image 2" width="200" height="200" style={{ border: "2px solid blue" }} />
+        <Image src="./photo.jpg" alt="Test image 2" width="200" height="200" style={{ border: "2px solid blue" }} />
       </div>
 
       <div className="mb-8">
         <h2 className="text-xl mb-2">Test 3: Absolute URL</h2>
-        <img
+        <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/photo.jpg-3v5Sfi5X085Pei1FOJELlADcCtg7GN.jpeg"
           alt="Test image 3"
           width="200"

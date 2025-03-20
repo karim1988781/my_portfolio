@@ -11,8 +11,8 @@ export default function About() {
             expertise in cutting-edge technologies.
           </p>
           <p className="text-lg text-gray-300">
-            My journey spans from a Bachelor's in Business Information Technology to a Master's in Computer Technology,
-            and now to doctoral research. I'm dedicated to leveraging data-driven insights and AI to solve complex
+            My journey spans from a Bachelors in Business Information Technology to a Masters in Computer Technology,
+            and now to doctoral research. I am dedicated to leveraging data-driven insights and AI to solve complex
             problems and drive innovation in technology and cybernetics.
           </p>
         </div>
