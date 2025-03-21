@@ -15,8 +15,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // Get the base path from environment or default to empty string
+  const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : ""
+
   return (
     <html lang="en" className="dark">
+      <head>
+        {/* Add this to ensure CSS is loaded correctly */}
+        <link rel="stylesheet" href={`${basePath}/globals.css`} />
+      </head>
       <body className={`${inter.className} bg-gray-900 text-gray-100`}>
         <div className="min-h-screen">{children}</div>
       </body>

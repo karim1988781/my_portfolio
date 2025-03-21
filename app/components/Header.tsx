@@ -1,14 +1,21 @@
 import { GithubIcon, LinkedinIcon, FileText } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export default function Header() {
+  // Get the base path from environment or default to empty string
+  const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : ""
+
   return (
     <header className="flex flex-col items-center mb-12 text-center">
       <div className="mb-6">
         <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-gray-700 mx-auto">
-          <Image src="/photo.jpg" alt="KARIMUNDA KALIMU" width={192} height={192} className="object-cover" priority />
+          {/* Use the external URL for now to ensure it works */}
+          <img
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/photo.jpg-3v5Sfi5X085Pei1FOJELlADcCtg7GN.jpeg"
+            alt="KARIMUNDA KALIMU"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
       <h1 className="text-4xl font-bold mb-4 text-white">KARIMUNDA KALIMU</h1>
@@ -30,12 +37,12 @@ export default function Header() {
         >
           <LinkedinIcon className="w-6 h-6" />
         </a>
-        <Link href="/cv" className="text-gray-400 hover:text-white">
+        <Link href={`${basePath}/cv`} className="text-gray-400 hover:text-white">
           <FileText className="w-6 h-6" />
         </Link>
       </div>
       <Button asChild variant="outline">
-        <Link href="/cv" className="flex items-center gap-2 text-white">
+        <Link href={`${basePath}/cv`} className="flex items-center gap-2 text-white">
           View Full CV
         </Link>
       </Button>
